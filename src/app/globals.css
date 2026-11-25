@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #FBF4EC;
+    --bg-card: #F9EDE4;
+    --text-espresso: #2E140B;
+    --text-mocha: #6B4433;
+    --accent-terracotta: #C84B1E;
+    --accent-ochre: #C26D1F;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-espresso);
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+}
+
+/* Warm Martian Cream Timer Deck matching MARTIAN 1.0 Event Flow & Rulebook */
+.martian-timer-deck {
+  background: linear-gradient(180deg, #FFFDFB 0%, #F9EDE4 100%);
+  border: 1.5px solid rgba(200, 75, 30, 0.28);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.95),
+    0 24px 55px -15px rgba(46, 20, 11, 0.14);
+}
+
+/* Precision digit card */
+.digit-card {
+  background: linear-gradient(180deg, #FFFDFB 0%, #F5E5D8 100%);
+  border: 1.5px solid rgba(200, 75, 30, 0.28);
+  box-shadow:
+    inset 0 2px 4px 0 rgba(255, 255, 255, 0.95),
+    0 10px 22px -8px rgba(46, 20, 11, 0.12);
+}
+
+/* Warm Sand / Cream Card matching MARTIAN 1.0 Rulebook & Event Flow PDFs */
+.martian-sand-panel {
+  background: #F9EDE4;
+  border: 1px solid rgba(200, 75, 30, 0.25);
+  box-shadow: 0 10px 28px -12px rgba(46, 20, 11, 0.1);
+}
+
+/* Deep Espresso panel for modals */
+.glass-panel {
+  background: rgba(46, 20, 11, 0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(200, 75, 30, 0.45);
+  box-shadow: 0 24px 60px -15px rgba(46, 20, 11, 0.65);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FBF4EC;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(200, 75, 30, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(200, 75, 30, 0.6);
+}
